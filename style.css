@@ -1,0 +1,129 @@
+.content{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #7f8c8d;
+    color: #ecf0f1;
+    display: flex;
+    gap: 20px;
+}
+
+.formDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+form{
+    display: none;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+legend{
+    font-size: 2rem;
+}
+
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+input:not([type="checkbox"]){
+    border-radius: 5px;
+    height: 1.3rem;
+}
+
+input:not([type="checkbox"]):focus{
+    outline: none !important;
+    height: 1.5rem;
+    border: solid 2px #34495e;
+}
+
+input[type="checkbox"] {
+    accent-color: #2ecc71;
+}
+
+.main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15px 0;
+    gap: 50px;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nbooks{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.books{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.book{
+    min-width: 125px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: solid 2px #34495e;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+h1{
+    margin: 0;
+    font-size: 4rem;
+}
+
+p{
+    text-align: center;
+    margin: 0;
+}
+
+button{
+    width: 100px;
+    padding: 3px;
+    font-size: inherit;
+    font-weight: 300;
+    border: 2px solid #34495e;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2ecc71;
+    color: #ecf0f1;
+}
+
+.notRead{
+    background-color: #d35400;
+}
+
+.removeBook{
+    background-color: red;
+}
