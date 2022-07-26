@@ -5,17 +5,18 @@ let booksDiv = document.querySelector(".books");
 let nbooks = document.querySelector("#nbooks");
 nbooks.innerText = `${booksList.length} book(s)`;
 
-function Book(author,title,pages,readStatus){
-    this.id = booksList.length,
-    this.author = author,
-    this.title = title,
-    this.pages = pages,
-    this.readStatus = readStatus
+class Book {
+    constructor (author,title,pages,readStatus){
+        this.id = booksList.length,
+        this.author = author,
+        this.title = title,
+        this.pages = pages,
+        this.readStatus = readStatus
+    }
+    toggleReadStatus = function(){
+        this.readStatus = this.readStatus == "Read" ? "Not Read":"Read";
+    }
 } 
-
-Book.prototype.toggleReadStatus = function(){
-    this.readStatus = this.readStatus == "Read" ? "Not Read":"Read";
-}
 
 function addBook(){
     let author = document.querySelector("#author").value;
